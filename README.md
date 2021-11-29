@@ -85,7 +85,78 @@ Program requires two required parameters - “currency” and “type”. One op
 	2021-11-28 19:52:38,538 - AlertingTool - INFO - Getting most recent trade information
 	2021-11-28 19:52:38,538 - AlertingTool - INFO - Checking for volume deviation for currency btcusd
 	2021-11-28 19:52:38,538 - AlertingTool - ERROR - Volume Deviation: Currency btcusd - Quantity of most recent trade is greater than 0.010000 of the total volume
-
+	(venv) shankars-mbp:GeminiCode shankarkrishnamurthy$ python main.py -c ALL -t pricechange -d 0.01
+	2021-11-28 20:19:41,403 - AlertingTool - INFO - Parsing Command Line Arguments
+	2021-11-28 20:19:42,318 - AlertingTool - INFO - Requesting PriceFeed API Data
+	2021-11-28 20:19:42,318 - AlertingTool - INFO - Running checks to see if PriceChange Alert is met.
+	2021-11-28 20:19:42,318 - AlertingTool - ERROR - Currency is BTCGBP 
+ 	Percent Change 0.0586
+	2021-11-28 20:19:42,318 - AlertingTool - ERROR - Currency is MATICUSD 
+ 	Percent Change 0.0442
+	2021-11-28 20:19:42,318 - AlertingTool - ERROR - Currency is STORJUSD 
+	 Percent Change 0.0678
+	2021-11-28 20:19:42,319 - AlertingTool - ERROR - Currency is ETHUSD 
+	 Percent Change 0.0689
+	2021-11-28 20:19:42,319 - AlertingTool - ERROR - Currency is UNIUSD 
+ 	Percent Change 0.0483
+	2021-11-28 20:19:42,319 - AlertingTool - ERROR - Currency is CRVUSD 
+	 Percent Change 0.0518
+	2021-11-28 20:19:42,319 - AlertingTool - ERROR - Currency is ETHEUR 
+	 Percent Change 0.0735
+	2021-11-28 20:19:42,319 - AlertingTool - ERROR - Currency is KNCUSD 
+	 Percent Change 0.0203
+	2021-11-28 20:19:42,319 - AlertingTool - ERROR - Currency is ALCXUSD 
+ 	Percent Change 0.2790
+	2021-11-28 20:19:42,319 - AlertingTool - ERROR - Currency is AXSUSD 
+ 	Percent Change 0.0722
+	2021-11-28 20:19:42,320 - AlertingTool - ERROR - Currency is CUBEUSD 
+	 Percent Change 0.1085
+	2021-11-28 20:19:42,320 - AlertingTool - ERROR - Currency is OXTUSD 
+	 Percent Change 0.0108
+	2021-11-28 20:19:42,320 - AlertingTool - ERROR - Currency is ETHSGD 
+	 Percent Change 0.0638
+	2021-11-28 20:19:42,320 - AlertingTool - ERROR - Currency is LINKUSD 
+	 Percent Change 0.0386
+	2021-11-28 20:19:42,320 - AlertingTool - ERROR - Currency is WCFGUSD 
+ 	Percent Change 0.0433
+	2021-11-28 20:19:42,320 - AlertingTool - ERROR - Currency is BTCEUR 
+ 	Percent Change 0.0608
+	2021-11-28 20:19:42,320 - AlertingTool - ERROR - Currency is DOGEUSD 
+ 	Percent Change 0.0230
+	2021-11-28 20:19:42,320 - AlertingTool - ERROR - Currency is BCHUSD 
+ 	Percent Change 0.0238
+	2021-11-28 20:19:42,320 - AlertingTool - ERROR - Currency is SLPUSD 
+ 	Percent Change 0.0379
+	2021-11-28 20:19:42,320 - AlertingTool - ERROR - Currency is AMPUSD 
+	 Percent Change 0.0706
+	2021-11-28 20:19:42,320 - AlertingTool - ERROR - Currency is BTCUSD 
+	 Percent Change 0.0602
+	2021-11-28 20:19:42,320 - AlertingTool - ERROR - Currency is LTCUSD 
+	Percent Change 0.0401
+	2021-11-28 20:19:42,320 - AlertingTool - ERROR - Currency is BTCDAI 
+	 Percent Change 0.0545
+	2021-11-28 20:19:42,321 - AlertingTool - ERROR - Currency is RAREUSD 
+ 	Percent Change 0.0484
+	2021-11-28 20:19:42,321 - AlertingTool - ERROR - Currency is LTCBCH 
+	 Percent Change 0.0168
+	 
+	 (venv) shankars-mbp:GeminiCode shankarkrishnamurthy$ python main.py -c btcusd -t ALL -d 0.01
+	2021-11-28 20:23:24,390 - AlertingTool - INFO - Parsing Command Line Arguments
+	2021-11-28 20:23:24,391 - AlertingTool - INFO - Calling pricechange module
+	2021-11-28 20:23:24,910 - AlertingTool - INFO - Requesting PriceFeed API Data
+	2021-11-28 20:23:24,911 - AlertingTool - INFO - Running checks to see if PriceChange Alert is met.
+	2021-11-28 20:23:24,911 - AlertingTool - ERROR - Currency is BTCUSD 
+ 	Percent Change 0.0608
+	2021-11-28 20:23:24,911 - AlertingTool - INFO - Calling standard deviation module
+	2021-11-28 20:23:24,911 - AlertingTool - INFO - Fetching API data for currency btcusd
+	2021-11-28 20:23:25,180 - AlertingTool - INFO - Running Standard Deviation check on btcusd
+	2021-11-28 20:23:25,180 - AlertingTool - ERROR - Price Deviation: Currency BTCUSD Standard Deviation Change 1019.8457590314791
+	2021-11-28 20:23:25,181 - AlertingTool - INFO - Calling Volume deviation
+	2021-11-28 20:23:25,181 - AlertingTool - INFO - Fetching API data for currency btcusd
+	2021-11-28 20:23:25,444 - AlertingTool - INFO - Fetching Volume in USD
+	2021-11-28 20:23:25,445 - AlertingTool - INFO - Getting most recent trade information
+	2021-11-28 20:23:25,445 - AlertingTool - INFO - Checking for volume deviation for currency btcusd
+	2021-11-28 20:23:25,445 - AlertingTool - ERROR - Volume Deviation: Currency btcusd - Quantity of most recent trade is greater than 0.010000 of the total volume
 
 Improvements:-
 ===========
